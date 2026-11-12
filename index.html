@@ -1,120 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
+      <nav class="navbar">
+        <div class="logo">PORTAFOLIO RIWI .</div>
 
-        <nav class="navbar">
-            <div class="logo">
-                PORTAFOLIO RIWI .
-            </div>
+        <div class="nav-right">
+          <div class="links">
+            <a href="#">Inteligencia artificial</a>
+            <a href="#">Algoritmos</a>
+          </div>
 
-            <div class="nav-right">
-                <div class="links">
-                    <a href="#">Inteligencia artificial</a>
-                    <a href="#">Algoritmos</a>
-                </div>
-
-                <button class="btn-nav">Rueda Libre</button>
-            </div>
-        </nav>
-
+          <button class="btn-nav">Rueda Libre</button>
+        </div>
+      </nav>
     </header>
 
     <section class="promo-carousel">
+      <button class="promo-arrow" id="promo-prev">&#10094;</button>
 
-        <button class="promo-arrow" id="promo-prev">
-            &#10094;
-        </button>
-
-        <div class="promo-content">
-
-            <div class="promo-slide active">
-                <span class="promo-tag">
-                    <i class="fa-solid fa-globe"></i>
-                </span>
-                <p>Bienvenido a mi portafolio personal</p>
-                <span class="promo-detail">2026</span>
-            </div>
-
-            <div class="promo-slide">
-                <span class="promo-tag">PROYECTOS</span>
-                <p>Descubre mis proyectos de desarrollo web</p>
-                <span class="promo-detail">EXPLORAR ↗</span>
-            </div>
-
-            <div class="promo-slide">
-                <span class="promo-tag">TECNOLOGÍA</span>
-                <p>Ideas, código y creatividad en un solo lugar</p>
-                <span class="promo-detail">PORTAFOLIO</span>
-            </div>
-
+      <div class="promo-content">
+        <div class="promo-slide active">
+          <span class="promo-tag">
+            <i class="fa-solid fa-globe"></i>
+          </span>
+          <p>Bienvenido a mi portafolio personal</p>
+          <span class="promo-detail">2026</span>
         </div>
 
-        <button class="promo-arrow" id="promo-next">
-            &#10095;
-        </button>
+        <div class="promo-slide">
+          <span class="promo-tag">PROYECTOS</span>
+          <p>Descubre mis proyectos de desarrollo web</p>
+          <span class="promo-detail">EXPLORAR ↗</span>
+        </div>
 
+        <div class="promo-slide">
+          <span class="promo-tag">TECNOLOGÍA</span>
+          <p>Ideas, código y creatividad en un solo lugar</p>
+          <span class="promo-detail">PORTAFOLIO</span>
+        </div>
+      </div>
+
+      <button class="promo-arrow" id="promo-next">&#10095;</button>
     </section>
 
     <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>
+            FELIPE<br />
+            ROJAS VALVERDE
+          </h1>
 
-        <section class="hero">
-            <div class="hero-text">
-                <h1>
-                    FELIPE<br>
-                    ROJAS VALVERDE
-                </h1>
+          <p>DESARROLLADOR DE SOFTWARE</p>
+          <p class="clan">clan ubuntu</p>
+        </div>
 
-                <p>DESARROLLADOR DE SOFTWARE</p>
-                <p class="clan">clan ubuntu</p>
+        <div class="hero-image-wrapper">
+          <div class="hero-image">
+            <img src="/assets/pfp-hero.png" alt="foto de perfil" />
+          </div>
 
+          <img src="assets/deco-hero.png" alt="" class="hero-decoration" />
+        </div>
+      </section>
+
+      <section>
+        <section class="content">
+          <h3 class="subtle">PROYECTOS</h3>
+
+          <div class="card">
+            <img
+              src="/assets/proyectos.png"
+              alt=""
+              class="projects-decoration"
+            />
+
+            <div class="card-container">
+              <div class="project-card">
+                <h3>RUEDA LIBRE</h3>
+                <p>Desarrollo web con HTML, CSS y JavaScript.</p>
+                <a href="#">VER PROYECTO ↗</a>
+              </div>
+
+              <div class="project-card">
+                <h3>ALGORITMIA</h3>
+                <p>Algoritmos y lógica de programación.</p>
+                <a href="#">VER PROYECTO ↗</a>
+              </div>
+
+              <div class="project-card">
+                <h3>INTELIGENCIA ARTIFICIAL</h3>
+                <p>Diseño de interfaces y experiencia de usuario.</p>
+                <a href="#">VER PROYECTO ↗</a>
+              </div>
+
+              <div class="project-card">
+                <h3>ZEN MOBILE</h3>
+                <p>Aplicaciones y proyectos personales.</p>
+                <a href="#">VER PROYECTO ↗</a>
+              </div>
             </div>
-
-            <div class="hero-image-wrapper">
-
-               
-                <div class="hero-image">
-                    <img src="/.png" alt="foto de perfil">
-                </div>
-
-                
-                <img src="assets/heroe.jpg" alt="" class="hero-decoration">
-
-            </div>
-
+          </div>
         </section>
 
+        <section class="about-section">
+          <div class="about-image">
+            <img src="/assets/about.png" alt="Mascota decorativa" />
+          </div>
 
-        <section>
-            <div class="content">
-                <div class="card">
-                    
-                </div>
+          <div class="about-wrapper">
+            <div class="about-card">
+              <div class="about-info">
+                <h3>SOBRE MÍ</h3>
+                <p>
+                  Técnico auxiliar en desarrollo de software, apasionado por el
+                  graffiti y el arte. Me gusta crear experiencias únicas, código
+                  limpio y verdaderamente útil.
+                </p>
+              </div>
 
+              <div class="about-skills">
+                <h3>SKILLSET</h3>
+                <ul>
+                  <li>Trabajo en equipo</li>
+                  <li>Constancia</li>
+                  <li>Búsqueda continua de conocimiento</li>
+                  <li>Enfoque creativo</li>
+                </ul>
+              </div>
             </div>
-
-
-
+          </div>
         </section>
-
-
+      </section>
     </main>
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>

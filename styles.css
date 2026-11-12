@@ -1,5 +1,7 @@
 
 
+
+
 @font-face {
   font-family: 'bolder';
   src: url('fonts/bolder.otf') 
@@ -92,7 +94,6 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     min-height: 70vh;
     padding: 40px 8%;
     gap: 40px;
@@ -131,6 +132,9 @@ ul{
     align-items: center;
     padding: 0;
     overflow: hidden;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    
 }
 
 .hero-image img {
@@ -138,7 +142,9 @@ ul{
     height: 85%;
     padding: 20px;
     object-fit: cover;
+    border-radius: 20px;
 }
+
 
 p{
   display: inline-block;
@@ -277,7 +283,7 @@ p{
 
 
 .content {
-    display: flex;
+   
     justify-content: space-between;
     align-items: center;
     min-height: 50vh;
@@ -287,12 +293,192 @@ p{
     background-color: rgba(248, 246, 240, 0.8);
 }
 
-.card{
-  display: flex;
-  min-height: 50vh;
+.card {
+    width: 95%;
+    padding: 35px;
+    margin-top: 10px;
+    background-color: #ef4038;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0 #000000;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    padding: 25px;
+    gap: 15px;
+    background-color: #F8F6F0;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.project-card h3 {
+    font-family: 'boton-nav', sans-serif;
+    font-size: 20px;
+}
+
+.project-card p {
+    font-family: 'bolder', sans-serif;
+    font-size: 14px;
+}
+
+.project-card a {
+    align-self: flex-start;
+    padding: 10px 15px;
+    background-color: #FFB800;
+    color: #000000;
+    border: 2px solid #000000;
+    text-decoration: none;
+    font-family: 'boton-nav', sans-serif;
+}
+
+.project-card a:hover {
+    background-color: #ef4038;
+}
+
+.subtle{
+
+  font-family: bolder;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 30px;
+
+}
+
+
+.about-section {
+    min-height: 70vh;
     padding: 40px 8%;
     gap: 40px;
     margin-top: 20px;
-    background-color: #ef4038;
+    background-color: rgba(248, 246, 240, 0.8);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    background-color: rgba(248, 246, 240, 0.8);
+}
+
+.about-image {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    
+}
+.about-wrapper {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 100%;
+    padding: 20px;
+
+    background-color: #ef4038;
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0 #000;
+
+    box-sizing: border-box;
+}
+
+.about-card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 25px;
+
+    background-color: #F8F6F0;
+    border: 2px solid #000;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.about-info,
+.about-skills {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-card h3 {
+    font-family: 'boton-nav', sans-serif;
+    font-size: 24px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 12px;
+}
+
+.about-card p,
+.about-card li {
+    font-family: 'bolder', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.about-skills ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.about-skills li::before {
+    content: "✦ ";
+    color: #ef4038;
+    font-size: 18px;
+}
+
+@media (max-width: 850px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        max-width: 220px;
+    }
+
+    .about-wrapper {
+        width: 100%;
+    }
+}
+
+.card {
+    position: relative;
+    overflow: visible;
+}
+
+.projects-decoration {
+    position: absolute;
+    width: 340px;
+    height: auto;
+
+    top: -154px;
+    right: -15px;
+
+    z-index: 10;
+    object-fit: contain;
+    pointer-events: none;
 }
