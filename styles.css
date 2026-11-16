@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: 'botones';
-  src: url('/fonts/brb.otf')
+  src: url('fonts/brb.otf')
 }
 
 @font-face {
   font-family: 'boton-nav';
-  src: url('/fonts/Hanson-Bold.ttf')
+  src: url('fonts/Hanson-Bold.ttf')
 }
 
 
@@ -138,6 +138,7 @@ ul{
     border: 2px solid #000000;
     border-radius: 20px;
     
+    
 }
 
 .hero-image img {
@@ -170,7 +171,7 @@ p{
     height: 400px;
     background-color: #ef4038;
     padding: 25px;
-
+    box-shadow: 5px 5px 0 #000000;
     display: flex;
     justify-content: center;
     align-items: center;
